@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Molecule Search Engine</title>
+
+
+<!-- Tailwind CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+
+</head>
+
+
+<body class="bg-gray-100 min-h-screen">
+
+
+<div class="max-w-5xl mx-auto p-10">
+
+
+<h1 class="text-4xl font-bold text-center mb-8">
+🧬 Molecule Search Engine
+</h1>
+
+
+
+<!-- Search Box -->
+
+<div class="flex gap-3">
+
+
+<input
+
+id="smilesInput"
+
+type="text"
+
+placeholder="Enter Molecule Name or SMILES (e.g. Aspirin or CCO)"
+
+class="flex-1 p-3 rounded-lg border bg-white"
+
+/>
+
+
+<button
+
+onclick="searchMolecule()"
+
+class="bg-blue-600 text-white px-6 rounded-lg hover:bg-blue-700"
+
+>
+
+Search
+
+</button>
+
+
+</div>
+
+
+
+<p id="loading"
+class="text-center mt-5 hidden">
+
+Searching molecules...
+
+</p>
+
+
+
+<!-- Results -->
+
+<div
+
+id="results"
+
+class="grid md:grid-cols-2 gap-5 mt-10"
+
+>
+
+</div>
+
+
+
+</div>
+
+
+
+
+<script>
+
+
+async function searchMolecule(){
+
+
+const smiles =
+document.getElementById("smilesInput").value;
+
+
+
+if(!smiles){
+
+alert("Please enter a Name or SMILES");
+
+return;
+
+}
+
+
+
+const loading =
+document.getElementById("loading");
+
+
+const results =
+document.getElementById("results");
+
+
+
+loading.classList.remove("hidden");
+
+results.innerHTML = "";
+
+
+
+try{
+
+
+const response = await fetch(
+
+`http://127.0.0.1:8000/search?query=${encodeURIComponent(smiles)}&top=10`
+
+);
+
+
+
+const data = await response.json();
+if (!response.ok) {
+    throw new Error(data.detail || "Search failed");
+}
+
+
+
+loading.classList.add("hidden");
+
+
+
+data.forEach((mol)=>{
+
+
+const card = document.createElement("div");
+
+
+card.className = 
+`
+bg-white
+rounded-xl
+shadow
+p-5
+`;
+
+
+
+card.innerHTML = `
+
+<h2 class="text-xl font-bold">
+
+${mol.name}
+
+</h2>
+
+
+<div class="mt-3">
+
+<p class="font-semibold">
+SMILES:
+</p>
+
+
+<p class="text-sm text-gray-600 break-all">
+
+${mol.SMILES}
+
+</p>
+
+
+</div>
+
+
+
+<div class="mt-4">
+
+<span
+
+class="
+bg-green-100
+text-green-700
+px-3
+py-1
+rounded-full
+"
+
+>
+
+Similarity:
+
+${(mol.similarity*100).toFixed(2)}%
+
+</span>
+
+
+</div>
+
+
+`;
+
+
+
+results.appendChild(card);
+
+
+});
+
+
+
+}
+
+catch(error){
+
+
+loading.classList.add("hidden");
+
+
+console.log(error);
+
+
+alert(
+"Backend connection failed"
+);
+
+
+}
+
+
+}
+
+
+
+</script>
+
+
+</body>
+
+</html>

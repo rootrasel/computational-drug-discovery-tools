@@ -1,0 +1,101 @@
+Name,SMILES
+Water,O
+Methane,C
+Ethane,CC
+Propane,CCC
+Butane,CCCC
+Pentane,CCCCC
+Hexane,CCCCCC
+Ethanol,CCO
+Methanol,CO
+Propanol,CCCO
+Ethylamine,CCN
+Methylamine,CN
+Ammonia,N
+Carbon Dioxide,O=C=O
+Carbon Monoxide,[C-]#[O+]
+Ethene,C=C
+Propene,CC=C
+Butene,CC=CC
+Acetylene,C#C
+Hydrogen Cyanide,C#N
+Acetonitrile,CC#N
+Acrylonitrile,C=CC#N
+Formaldehyde,C=O
+Acetaldehyde,CC=O
+Acetone,CC(=O)C
+Formic Acid,C(=O)O
+Acetic Acid,CC(=O)O
+Propionic Acid,CCC(=O)O
+Butyric Acid,CCCC(=O)O
+Benzoic Acid,C1=CC=C(C=C1)C(=O)O
+Lactic Acid,CC(O)C(=O)O
+Pyruvic Acid,CC(=O)C(=O)O
+Oxalic Acid,OC(=O)C(=O)O
+Citric Acid,C(C(=O)O)C(CC(=O)O)(O)C(=O)O
+Succinic Acid,OC(=O)CCC(=O)O
+Isopropanol,CC(C)O
+tert-Butanol,CC(C)(C)O
+Ethylene Glycol,OCCO
+Glycerol,OCC(O)CO
+Phenol,Oc1ccccc1
+Benzyl Alcohol,OCc1ccccc1
+Cyclohexanol,OC1CCCCC1
+2-Butanol,CC(O)CC
+1-Butanol,CCCCO
+2-Methyl-2-Propanol,CC(C)(C)O
+Cyclopropane,C1CC1
+Cyclobutane,C1CCC1
+Cyclopentane,C1CCCC1
+Cyclohexane,C1CCCCC1
+Cycloheptane,C1CCCCCC1
+Benzene,c1ccccc1
+Toluene,Cc1ccccc1
+Ethylbenzene,CCc1ccccc1
+Xylene,Cc1ccc(C)cc1
+Naphthalene,c1cccc2ccccc12
+Isobutane,CC(C)C
+Neopentane,CC(C)(C)C
+Isopentane,CC(C)CC
+2-Methylpentane,CC(C)CCC
+3-Methylpentane,CCC(C)CC
+"2,2-Dimethylpropane",CC(C)(C)C
+"2,3-Dimethylbutane",CC(C)C(C)C
+tert-Butylamine,CC(C)(C)N
+Isobutyl Alcohol,CC(C)CO
+tert-Butyl Alcohol,CC(C)(C)O
+Dimethyl Ether,COC
+Diethyl Ether,CCOCC
+Ethyl Acetate,CCOC(=O)C
+Methyl Acetate,COC(=O)C
+Propyl Acetate,CCCOC(=O)C
+Aspirin,CC(=O)OC1=CC=CC=C1C(=O)O
+Methyl Benzoate,COC(=O)c1ccccc1
+Ethyl Benzoate,CCOC(=O)c1ccccc1
+Anisole,COc1ccccc1
+Vanillin,COc1cc(C=O)ccc1O
+Aniline,Nc1ccccc1
+Acetamide,CC(=O)N
+Formamide,NC=O
+Urea,NC(=O)N
+Dimethylamine,CN(C)C
+Trimethylamine,CN(C)C
+Pyridine,n1ccccc1
+Pyrrole,c1cc[nH]c1
+Imidazole,c1ncc[nH]1
+Piperidine,N1CCCCC1
+Glycine,NCC(=O)O
+Alanine,CC(N)C(=O)O
+Serine,NC(CO)C(=O)O
+Valine,CC(C)C(N)C(=O)O
+Glucose,C(C1C(C(C(C(O1)O)O)O)O)O
+Fructose,C(C(C1C(C(C(O1)(CO)O)O)O)O)O
+Sucrose,OC[C@H]1O[C@@H](O[C@@H]2[C@H](O)[C@@H](O)[C@H](CO)O[C@H]2CO)[C@H](O)[C@@H](O)[C@@H]1O
+Cholesterol,CC(C)CCCC(C)C1CCC2C3CC=C4CC(O)CCC4(C)C3CCC12C
+Caffeine,Cn1cnc2n(C)c(=O)n(C)c(=O)c12
+Creatinine,CN1C(=O)N=C(N)C1=O
+Paracetamol,CC(=O)NC1=CC(O)=CC=C1
+Ibuprofen,CC(C)CC1=CC=C(C=C1)C(C)C(=O)O
+Naproxen,COC1=CC=CC2=C1C=C(C=C2)C(C)C(=O)O
+Lidocaine,CCN(CC)C(=O)C1=CC=CC=C1N(CC)CC
+Nicotine,CN1CCC[C@H]1c2cccnc2
