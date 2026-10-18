@@ -3,44 +3,9 @@
 A curated workspace of interactive Jupyter notebooks, pipelines, datasets, and resources for AI-driven computational drug discovery, cheminformatics, structural biology, and molecular modeling.
 
 ---
+update readme.md
 
-## 📂 Repository Structure
-
-All libraries are unpacked directly at the root level (no domain grouping folders), with notebooks and relevant materials contained inside each library directory:
-
-```text
-computational-drug-discovery-tools/
-├── AutoDock_Vina/                       # Molecular docking (AutoDock Vina)
-├── BioNeMo/                             # NVIDIA BioNeMo generative AI
-├── Biopython/                           # Biological sequences & structures
-├── Chemprop/                            # Molecular property prediction via message passing
-├── ChimeraX/                            # UCSF ChimeraX molecular visualization
-├── DeepChem/                            # Deep learning for molecular sciences & QSAR
-├── DeepPurpose/                         # Deep learning for drug-target interaction (DTI)
-├── DiffDock/                            # Diffusion-based molecular docking
-├── DrugEx/                              # De novo drug design with multi-objective RL
-├── ESM/                                 # Evolutionary Scale Modeling (protein language models)
-├── Gnina/                               # Deep learning-based molecular docking
-├── Hugging Face Transformers/          # Foundation models for molecular & protein biology
-├── MDAnalysis/                          # Molecular dynamics trajectory analysis
-├── MegaMolBART/                         # Generative chemistry transformer
-├── OpenFold/                            # Open-source AlphaFold2 implementation
-├── OpenMM/                              # GPU-accelerated molecular dynamics
-├── ProteinMPNN/                         # Deep learning for protein sequence design
-├── PyMOL/                               # Molecular graphics & visualization
-├── PyTorch Geometric/                   # Graph Neural Networks (GNNs) for molecules
-├── RDKit/                               # Cheminformatics, descriptors, fingerprints, tutorials & projects
-├── REINVENT/                            # Reinforcement learning for de novo design
-├── Research Engineer Priority Ranking/  # Prioritized roadmap & learning guides
-├── Scanpy/                              # Single-cell RNA-seq analysis in Python
-├── TorchDrug/                           # Machine learning platform for drug discovery
-├── pysam/                               # Sequence alignment/mapping (SAM/BAM/VCF)
-└── scvi-tools/                          # Deep probabilistic genomics & single-cell models
-```
-
----
-
-## 🛠️ Highlights
+## Highlights
 
 - **Cheminformatics & Molecules**: [RDKit](file:///home/softvence/Projects_Hub/computational-drug-discovery-tools/RDKit), [DeepChem](file:///home/softvence/Projects_Hub/computational-drug-discovery-tools/DeepChem), [Chemprop](file:///home/softvence/Projects_Hub/computational-drug-discovery-tools/Chemprop), [TorchDrug](file:///home/softvence/Projects_Hub/computational-drug-discovery-tools/TorchDrug)
 - **Molecular Docking**: [AutoDock_Vina](file:///home/softvence/Projects_Hub/computational-drug-discovery-tools/AutoDock_Vina), [DiffDock](file:///home/softvence/Projects_Hub/computational-drug-discovery-tools/DiffDock), [Gnina](file:///home/softvence/Projects_Hub/computational-drug-discovery-tools/Gnina)
